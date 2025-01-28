@@ -30,6 +30,9 @@ return {
       servers = {
         -- these servers will automatically be installed
         elixirls = {},
+        svelte = {},
+        tailwindcss = {},
+        ts_ls = {},
       },
     },
   },
