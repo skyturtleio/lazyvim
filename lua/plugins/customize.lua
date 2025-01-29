@@ -31,7 +31,6 @@ return {
         -- these servers will automatically be installed
         elixirls = {},
         svelte = {},
-        tailwindcss = {},
         ts_ls = {},
       },
     },
@@ -51,6 +50,7 @@ return {
     -- I didn't like the screen real estate it took up
     { "akinsho/bufferline.nvim", enabled = false },
   },
+  {},
   {
     {
       -- Turn off `<CR>` (the Enter or Return key) from accepting suggestions
@@ -65,6 +65,12 @@ return {
       "hrsh7th/nvim-cmp",
       opts = function(_, opts)
         local cmp = require("cmp")
+
+        cmp.setup({
+          experimental = {
+            ghost_text = false,
+          },
+        })
 
         opts.mapping = vim.tbl_extend("force", opts.mapping, {
           ["<CR>"] = cmp.mapping({
