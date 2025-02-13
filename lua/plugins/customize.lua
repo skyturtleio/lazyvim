@@ -32,7 +32,6 @@ return {
         -- these servers will automatically be installed
         elixirls = {},
         svelte = {},
-        ts_ls = {},
       },
     },
   },
@@ -94,6 +93,9 @@ return {
     opts = {
       formatters_by_ft = {
         elixir = { "mix" },
+        -- Conform will run the first available formatter
+        javascript = { "prettierd", "prettier", stop_after_first = true },
+        svelte = { "prettierd", "prettier", stop_after_first = true },
       },
     },
   },
