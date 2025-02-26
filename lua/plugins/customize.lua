@@ -25,6 +25,18 @@ return {
     },
   },
   {
+    "nvim-treesitter/nvim-treesitter",
+    opts = function(_, _)
+      vim.filetype.add({
+        filename = {
+          [".env.development"] = "sh",
+          [".env.production"] = "sh",
+          [".env.example"] = "sh",
+        },
+      })
+    end,
+  },
+  {
     "neovim/nvim-lspconfig",
     opts = {
       inlay_hints = { enabled = false },
