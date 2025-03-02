@@ -32,6 +32,7 @@ return {
           [".env.development"] = "sh",
           [".env.production"] = "sh",
           [".env.example"] = "sh",
+          [".env.local"] = "sh",
         },
       })
     end,
