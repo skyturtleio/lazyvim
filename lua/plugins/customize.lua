@@ -119,10 +119,10 @@ return {
     "mfussenegger/nvim-lint",
     opts = {
       linters_by_ft = {
-        javascript = { "eslinst_d" },
-        javascriptreact = { "eslinst_d" },
-        typescript = { "eslinst_d" },
-        typescriptreact = { "eslinst_d" },
+        javascript = { "eslint_d" },
+        javascriptreact = { "eslint_d" },
+        typescript = { "eslint_d" },
+        typescriptreact = { "eslint_d" },
       },
     },
   },
