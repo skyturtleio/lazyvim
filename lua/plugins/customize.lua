@@ -126,4 +126,36 @@ return {
       },
     },
   },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    enabled = false,
+  },
+  {
+    "ibhagwan/fzf-lua",
+    keys = {
+      { "<leader>fF", LazyVim.pick("files"), desc = "Find Files (Root Dir)" },
+      { "<leader>ff", LazyVim.pick("files", { root = false }), desc = "Find Files (cwd)" },
+    },
+  },
+  {
+    "echasnovski/mini.files",
+    keys = {
+      {
+        "<leader>fM",
+        function()
+          require("mini.files").open(vim.api.nvim_buf_get_name(0), true)
+        end,
+        desc = "Open mini.files (Directory of Current File)",
+      },
+      {
+        "<leader>fm",
+        function()
+          require("mini.files").open(vim.uv.cwd(), true)
+        end,
+        desc = "Open mini.files (cwd)",
+      },
+      { "<leader>e", "<leader>fm", desc = "Open mini.files (Root Dir)", remap = true },
+      { "<leader>E", "<leader>fM", desc = "Open mini.files (cwd)", remap = true },
+    },
+  },
 }
