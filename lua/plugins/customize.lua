@@ -141,7 +141,7 @@ return {
     "echasnovski/mini.files",
     opts = {
       windows = {
-        preview = false,
+        preview = true,
         max_number = 3,
       },
       mappings = {
