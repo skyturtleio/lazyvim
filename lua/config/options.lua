@@ -4,3 +4,6 @@
 
 -- disable all animations
 vim.g.snacks_animate = false
+
+-- do not hide any markup
+vim.opt.conceallevel = 0
