@@ -29,6 +29,14 @@ return {
     },
   },
   {
+    "echasnovski/mini.hipatterns",
+    opts = {
+      tailwind = {
+        enabled = false,
+      },
+    },
+  },
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, _)
       vim.filetype.add({
