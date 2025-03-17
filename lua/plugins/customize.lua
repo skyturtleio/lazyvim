@@ -1,5 +1,9 @@
 return {
   {
+    "nvim-neo-tree/neo-tree.nvim",
+    enabled = false,
+  },
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
@@ -137,10 +141,6 @@ return {
         },
       },
     },
-  },
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    enabled = false,
   },
   {
     "ibhagwan/fzf-lua",
