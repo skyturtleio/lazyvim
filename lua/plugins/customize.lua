@@ -161,8 +161,9 @@ return {
     "echasnovski/mini.files",
     opts = {
       windows = {
+        max_number = 2,
         preview = true,
-        max_number = 3,
+        width_preview = 60,
       },
       mappings = {
         go_in_plus = "<CR>",
