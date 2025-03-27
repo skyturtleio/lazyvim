@@ -29,6 +29,20 @@ return {
     },
   },
   {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "stylua",
+      },
+    },
+  },
+  {
+    "garymjr/nvim-snippets",
+    opts = {
+      friendly_snippets = false,
+    },
+  },
+  {
     "echasnovski/mini.hipatterns",
     opts = {
       tailwind = {
