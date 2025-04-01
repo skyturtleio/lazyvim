@@ -4,7 +4,8 @@ return {
     opts = {
       windows = {
         max_number = 1,
-        -- preview = true,
+        preview = false,
+        width_focus = 70,
         -- width_preview = 60,
       },
       mappings = {
@@ -32,8 +33,8 @@ return {
         end,
         desc = "Open mini.files (cwd)",
       },
-      { "<leader>e", "<leader>fm", desc = "Open mini.files (Root Dir)", remap = true },
-      { "<leader>E", "<leader>fM", desc = "Open mini.files (cwd)", remap = true },
+      { "<leader>e", "<leader>fM", desc = "Open mini.files (cwd)", remap = true },
+      { "<leader>E", "<leader>fm", desc = "Open mini.files (Root Dir)", remap = true },
     },
   },
 }
