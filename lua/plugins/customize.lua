@@ -1,30 +1,5 @@
 return {
   {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        "bash",
-        "elixir",
-        "eex",
-        "heex",
-        "html",
-        "javascript",
-        "json",
-        "lua",
-        "markdown",
-        "markdown_inline",
-        "python",
-        "query",
-        "regex",
-        "svelte",
-        "tsx",
-        "typescript",
-        "vim",
-        "yaml",
-      },
-    },
-  },
-  {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
@@ -59,16 +34,7 @@ return {
       })
     end,
   },
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      inlay_hints = { enabled = false },
-      servers = {
-        -- these servers will automatically be installed
-        elixirls = {},
-      },
-    },
-  },
+
   {
     "saghen/blink.cmp",
     opts = {
