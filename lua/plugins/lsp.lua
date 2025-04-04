@@ -6,6 +6,7 @@ return {
       servers = {
         -- these servers will automatically be installed
         elixirls = {},
+        gopls = {},
         ocamllsp = {},
       },
     },

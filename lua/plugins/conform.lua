@@ -4,6 +4,8 @@ return {
     opts = {
       formatters_by_ft = {
         elixir = { "mix" },
+        go = { "gofmt" },
+        ocaml = { "ocamlformat" },
         -- Conform will run the first available formatter
         javascript = { "prettierd", "prettier", stop_after_first = true },
         javascriptreact = { "prettierd", "prettier", stop_after_first = true },
@@ -11,7 +13,6 @@ return {
         typescriptreact = { "prettierd", "prettier", stop_after_first = true },
         svelte = { "prettierd", "prettier", stop_after_first = true },
         html = { "prettierd", "prettier", stop_after_first = true },
-        ocaml = { "ocamlformat" },
       },
     },
   },

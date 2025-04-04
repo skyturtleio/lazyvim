@@ -8,6 +8,7 @@ return {
         "eex",
         "heex",
         "html",
+        "go",
         "javascript",
         "json",
         "lua",
