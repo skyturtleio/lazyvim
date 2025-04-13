@@ -4,6 +4,7 @@ return {
     opts = {
       formatters_by_ft = {
         elixir = { "mix" },
+        heex = { "mix" },
         go = { "gofmt" },
         ocaml = { "ocamlformat" },
         -- Conform will run the first available formatter
