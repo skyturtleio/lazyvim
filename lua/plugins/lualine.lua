@@ -4,7 +4,7 @@ return {
     opts = function()
       local opts = {
         options = {
-          theme = "auto",
+          theme = "catppuccin",
         },
         sections = {
           lualine_c = {
