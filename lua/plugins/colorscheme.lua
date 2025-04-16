@@ -22,7 +22,8 @@ return {
     -- See here for why: https://www.lazyvim.org/plugins/colorscheme
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      -- colorscheme = "catppuccin",
+      colorscheme = "tokyonight-night",
     },
   },
 }
