@@ -2,11 +2,19 @@ return {
   {
     "catppuccin/nvim",
     name = "catppuccin",
-    lazy = false,
     priority = 1000,
     opts = {
       -- flavour = "macchiato",
       flavour = "mocha",
+      -- NOTE: Color overrides for super dark mocha theme
+      -- https://github.com/catppuccin/nvim/discussions/323#discussion-4496786
+      -- color_overrides = {
+      --   mocha = {
+      --     base = "#000000",
+      --     mantle = "#000000",
+      --     crust = "#000000",
+      --   },
+      -- },
     },
   },
   {
