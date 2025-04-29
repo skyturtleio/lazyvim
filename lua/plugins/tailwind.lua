@@ -1,3 +1,7 @@
+-- disabling while I try to figure out a better way to handle tailwind lsp
+-- stylua: ignore
+if true then return {} end
+
 -- NOTE: This is a workaround to get TailwindCSS LSP compltions working in various projects.
 -- With the default setup out of the box with LazyVim, it was hit or miss to get tailwind
 -- completions. With this `root_pattern`, I can just `touch .tailwindroot` in any
