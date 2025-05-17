@@ -1,3 +1,7 @@
+-- disable - no longer necessary with the new LazyVim update
+-- stylua: ignore
+if true then return {} end
+
 return {
   -- This is a module to deal with Mason.nvim's breaking change.
   -- LazyVim does not have a fix yet for the [issue](https://github.com/LazyVim/LazyVim/issues/6039)
