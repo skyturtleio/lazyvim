@@ -30,6 +30,7 @@ return {
           [".env.production"] = "sh",
           [".env.example"] = "sh",
           [".env.local"] = "sh",
+          [".env.deploy"] = "sh",
         },
       })
     end,
