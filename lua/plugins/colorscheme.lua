@@ -1,20 +1,14 @@
 return {
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    priority = 1000,
+    "folke/tokyonight.nvim",
     opts = {
-      -- flavour = "macchiato",
-      flavour = "mocha",
-      -- NOTE: Color overrides for super dark mocha theme
-      -- https://github.com/catppuccin/nvim/discussions/323#discussion-4496786
-      -- color_overrides = {
-      --   mocha = {
-      --     base = "#000000",
-      --     mantle = "#000000",
-      --     crust = "#000000",
-      --   },
-      -- },
+      on_highlights = function(hl, c)
+        -- Make completion menu text much brighter
+        hl.CmpItemMenu = { fg = c.fg }
+        hl.CmpItemMenuDefault = { fg = c.fg }
+        hl.CmpGhostText = { fg = c.fg_dark, italic = true }
+        hl.Comment = { fg = c.fg_gutter, italic = true }
+      end,
     },
   },
   {
