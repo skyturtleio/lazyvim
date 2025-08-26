@@ -33,5 +33,42 @@
     "prefix": "jt",
     "body": ["type $1 = $2"],
     "description": "Type alias"
+  },
+  "react_component": {
+    "prefix": "jrc",
+    "body": [
+      "function $1() {",
+      "  return (",
+      "    <div>$2</div>",
+      "  )",
+      "}"
+    ],
+    "description": "React functional component"
+  },
+  "react_component_export": {
+    "prefix": "jrce",
+    "body": [
+      "export function $1() {",
+      "  return (",
+      "    <div>$2</div>",
+      "  )",
+      "}"
+    ],
+    "description": "React functional component (exported)"
+  },
+  "react_component_typed": {
+    "prefix": "jrct",
+    "body": [
+      "interface $1Props {",
+      "  $2",
+      "}",
+      "",
+      "function $1({ $3 }: $1Props) {",
+      "  return (",
+      "    <div>$4</div>",
+      "  )",
+      "}"
+    ],
+    "description": "Typed React functional component"
   }
 }

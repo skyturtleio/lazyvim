@@ -24,14 +24,26 @@
     "body": ["const $1 = $2"],
     "description": "Const declaration"
   },
-  "interface": {
-    "prefix": "ji",
-    "body": ["interface $1 {", "  $2", "}"],
-    "description": "TypeScript interface"
+  "react_component": {
+    "prefix": "jrc",
+    "body": [
+      "function $1() {",
+      "  return (",
+      "    <div>$2</div>",
+      "  )",
+      "}"
+    ],
+    "description": "React functional component"
   },
-  "type_alias": {
-    "prefix": "jt",
-    "body": ["type $1 = $2"],
-    "description": "Type alias"
+  "react_component_export": {
+    "prefix": "jrce",
+    "body": [
+      "export function $1() {",
+      "  return (",
+      "    <div>$2</div>",
+      "  )",
+      "}"
+    ],
+    "description": "React functional component (exported)"
   }
 }

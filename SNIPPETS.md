@@ -2,9 +2,22 @@
 
 This directory contains custom snippet definitions that are automatically loaded by `nvim-snippets`.
 
+## Snippet Inheritance Structure
+
+The snippets follow a logical inheritance pattern:
+
+```
+javascript.json (base JS snippets)
+├── typescript.json (JS + TS-specific snippets)
+├── javascriptreact.json (JS + React snippets)  
+└── typescriptreact.json (JS + TS + React snippets)
+```
+
+Each file contains **all** snippets it should have, creating a "superset" approach rather than true inheritance.
+
 ## How to Add New Snippets
 
-1. Create or edit a `.json` file in the `snippets/` directory named after the filetype (e.g., `typescript.json`, `javascript.json`, `lua.json`)
+1. Create or edit a `.json` file in the `snippets/` directory named after the **exact** filetype
 2. Use the VS Code snippet format:
 
 ```json
@@ -17,6 +30,13 @@ This directory contains custom snippet definitions that are automatically loaded
 }
 ```
 
+## File Type Mapping
+
+- `.js` files → `javascript.json`
+- `.ts` files → `typescript.json` 
+- `.jsx` files → `javascriptreact.json`
+- `.tsx` files → `typescriptreact.json`
+
 ## Placeholders
 
 - `$1`, `$2`, etc. - Tab stops (use Tab to jump between them)
@@ -25,12 +45,21 @@ This directory contains custom snippet definitions that are automatically loaded
 
 ## Current Snippets
 
-### TypeScript/JavaScript
+### Base JavaScript (all files inherit these)
 - `jaa` - Arrow function: `($1) => $2`
-- `jaaa` - Async arrow function: `async ($1) => $2`
+- `jaaa` - Async arrow function: `async ($1) => $2`  
 - `cl` - Console log: `console.log($1)`
 - `jf` - Function declaration: `function $1($2) { $3 }`
-- `ji` - TypeScript interface (TypeScript only)
+- `jc` - Const declaration: `const $1 = $2`
+
+### TypeScript Additions (.ts, .tsx files)
+- `ji` - Interface: `interface $1 { $2 }`
+- `jt` - Type alias: `type $1 = $2`
+
+### React Additions (.jsx, .tsx files)
+- `jrc` - React component: `function $1() { return (<div>$2</div>) }`
+- `jrce` - React component (exported)
+- `jrct` - Typed React component (TSX only)
 
 ## Usage
 

@@ -18,5 +18,10 @@
     "prefix": "jf",
     "body": ["function $1($2) {", "  $3", "}"],
     "description": "Function declaration"
+  },
+  "const_declaration": {
+    "prefix": "jc",
+    "body": ["const $1 = $2"],
+    "description": "Const declaration"
   }
 }
