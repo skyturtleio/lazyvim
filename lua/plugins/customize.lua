@@ -35,7 +35,6 @@ return {
       })
     end,
   },
-
   {
     "saghen/blink.cmp",
     opts = {

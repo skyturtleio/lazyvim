@@ -1,3 +1,8 @@
+-- disabling because I don't plan to use Deno right now 2025-08-26
+if true then
+  return {}
+end
+
 local nvim_lsp = require("lspconfig")
 
 -- the example to set up these root_dirs for deno_ls and vtsls is from

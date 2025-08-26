@@ -15,7 +15,13 @@ return {
           -- I followed the example from LazyVim's docs for `nvim-lint`
           -- https://www.lazyvim.org/plugins/linting#nvim-lint
           condition = function(ctx)
-            return vim.fs.find({ "eslint.config.js" }, { path = ctx.filename, upward = true })[1]
+            return vim.fs.find({
+              "eslint.config.js",
+              ".eslintrc.js",
+              ".eslintrc.json",
+              ".eslintrc.yml",
+              ".eslintrc.yaml",
+            }, { path = ctx.filename, upward = true })[1]
           end,
         },
       },
