@@ -1,0 +1,22 @@
+{
+  "arrow_function": {
+    "prefix": "jaa",
+    "body": ["($1) => $2"],
+    "description": "Arrow function"
+  },
+  "arrow_function_async": {
+    "prefix": "jaaa",
+    "body": ["async ($1) => $2"],
+    "description": "Async arrow function"
+  },
+  "console_log": {
+    "prefix": "cl",
+    "body": ["console.log($1)"],
+    "description": "Console log"
+  },
+  "function_declaration": {
+    "prefix": "jf",
+    "body": ["function $1($2) {", "  $3", "}"],
+    "description": "Function declaration"
+  }
+}
