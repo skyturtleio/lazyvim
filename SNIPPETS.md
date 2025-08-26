@@ -4,16 +4,16 @@ This directory contains custom snippet definitions that are automatically loaded
 
 ## Snippet Inheritance Structure
 
-The snippets follow a logical inheritance pattern:
+The snippets follow a **true inheritance** pattern using `extended_filetypes` configuration:
 
 ```
 javascript.json (base JS snippets)
-├── typescript.json (JS + TS-specific snippets)
-├── javascriptreact.json (JS + React snippets)  
-└── typescriptreact.json (JS + TS + React snippets)
+├── typescript.json (only TS-specific snippets) → inherits from javascript
+├── javascriptreact.json (only React snippets) → inherits from javascript  
+└── typescriptreact.json (only TSX-specific snippets) → inherits from javascript + typescript
 ```
 
-Each file contains **all** snippets it should have, creating a "superset" approach rather than true inheritance.
+Each file only contains **new** snippets specific to that filetype. Base snippets are automatically inherited.
 
 ## How to Add New Snippets
 
