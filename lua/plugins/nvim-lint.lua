@@ -7,6 +7,7 @@ return {
         javascriptreact = { "eslint_d" },
         typescript = { "eslint_d" },
         typescriptreact = { "eslint_d" },
+        svelte = { "eslint_d" },
       },
       linters = {
         eslint_d = {
@@ -17,7 +18,10 @@ return {
           condition = function(ctx)
             return vim.fs.find({
               "eslint.config.js",
+              "eslint.config.mjs",
+              "eslint.config.cjs",
               ".eslintrc.js",
+              ".eslintrc.cjs",
               ".eslintrc.json",
               ".eslintrc.yml",
               ".eslintrc.yaml",
