@@ -5,6 +5,7 @@ return {
       local opts = {
         options = {
           theme = "tokyonight-night",
+          -- theme = "onedark",
         },
         sections = {
           lualine_c = {

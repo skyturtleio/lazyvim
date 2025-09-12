@@ -16,7 +16,7 @@ return {
             workingDirectories = { mode = "auto" },
           },
         },
-        svelte = {},
+        -- svelte is now handled by the svelte extra
       },
     },
   },
