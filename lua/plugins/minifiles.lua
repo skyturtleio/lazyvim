@@ -33,8 +33,8 @@ return {
         end,
         desc = "Open mini.files (cwd)",
       },
-      { "<leader>e", "<leader>fM", desc = "Open mini.files (cwd)", remap = true },
-      { "<leader>E", "<leader>fm", desc = "Open mini.files (Root Dir)", remap = true },
+      { "<leader>e", "<leader>fM", desc = "Open mini.files (Directory of Current File)", remap = true },
+      { "<leader>E", "<leader>fm", desc = "Open mini.files (cwd)", remap = true },
     },
   },
 }
