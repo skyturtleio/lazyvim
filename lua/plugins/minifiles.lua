@@ -1,6 +1,6 @@
 return {
   {
-    "echasnovski/mini.files",
+    "nvim-mini/mini.files",
     opts = {
       windows = {
         max_number = 1,

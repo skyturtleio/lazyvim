@@ -1,6 +1,6 @@
 return {
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
         "stylua",
@@ -19,7 +19,7 @@ return {
     },
   },
   {
-    "echasnovski/mini.hipatterns",
+    "nvim-mini/mini.hipatterns",
     opts = {
       tailwind = {
         enabled = false,
