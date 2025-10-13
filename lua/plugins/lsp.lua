@@ -16,7 +16,12 @@ return {
             workingDirectories = { mode = "auto" },
           },
         },
-        -- svelte is now handled by the svelte extra
+        elixirls = {
+          settings = {
+            dialyzerEnabled = false,
+            fetchDeps = false,
+          },
+        },
       },
     },
   },
