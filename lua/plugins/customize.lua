@@ -40,14 +40,4 @@ return {
       })
     end,
   },
-  {
-    "saghen/blink.cmp",
-    opts = {
-      completion = {
-        ghost_text = {
-          enabled = false,
-        },
-      },
-    },
-  },
 }
