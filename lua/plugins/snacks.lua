@@ -1,3 +1,7 @@
+-- ignoring to  see `snacks` defaults
+-- stylua: ignore
+if true then return {} end
+
 return {
   {
     -- 🍿 A collection of QoL plugins for Neovim
