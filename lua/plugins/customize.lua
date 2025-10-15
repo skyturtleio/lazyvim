@@ -8,17 +8,6 @@ return {
     },
   },
   {
-    "garymjr/nvim-snippets",
-    opts = {
-      friendly_snippets = false,
-      extended_filetypes = {
-        typescript = { "javascript" },
-        typescriptreact = { "javascript", "typescript" },
-        javascriptreact = { "javascript" },
-      },
-    },
-  },
-  {
     "nvim-mini/mini.hipatterns",
     opts = {
       tailwind = {
