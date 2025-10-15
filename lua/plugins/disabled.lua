@@ -14,11 +14,11 @@ return {
     "folke/noice.nvim",
     enabled = false,
   },
-  {
-    -- NOTE: I don't like the opening dashboard
-    "folke/snacks.nvim",
-    opts = {
-      dashboard = { enabled = false },
-    },
-  },
+  -- {
+  --   -- NOTE: I don't like the opening dashboard
+  --   "folke/snacks.nvim",
+  --   opts = {
+  --     dashboard = { enabled = false },
+  --   },
+  -- },
 }
