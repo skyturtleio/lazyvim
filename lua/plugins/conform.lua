@@ -3,6 +3,7 @@ return {
     "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
+        -- For elixir, let LSP handle formatting
         -- elixir = { "mix" },
         -- heex = { "mix" },
         go = { "gofmt" },
